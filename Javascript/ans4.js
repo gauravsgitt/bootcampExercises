@@ -8,7 +8,7 @@ var ob1={
   
   for(var k in ob1)
   {
-    alert("In Object1 key is "+ k + " and value is "+ ob1[k]);
+    console.log("In Object1 key is "+ k + " and value is "+ ob1[k]);
   }
   
   function copyob(o1,o2){
@@ -22,5 +22,5 @@ var ob1={
   
   for(var k in ob2)
   {
-    alert("In Object2 key is "+ k + " and value is "+ ob2[k]);
+    console.log("In Object2 key is "+ k + " and value is "+ ob2[k]);
   }
