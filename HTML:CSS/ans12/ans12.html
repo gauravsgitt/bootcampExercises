@@ -8,107 +8,70 @@
 		<link rel="stylesheet" href="ans12.css" />
 	</head>
 	<body>
-		<header id="header">
-			<h1 class="heading">TO THE NEW</h1>
-
-			<nav class="nav">
-				<a href="#home" class="nav-link nav-text" rel="noopener noreferrer"
-					>Home</a
-				>
-
-				<a href="#help" class="nav-link nav-text" rel="noopener noreferrer"
-					>Quick Help</a
-				>
-			</nav>
-		</header>
-
-		<hr class="divider" />
-
-		<main id="#main">
-			<div class="form-container">
-				<h3 class="heading">Bug Report</h3>
-
-				<form class="form">
-					<div class="field-container">
-						<label for="title">Title:*</label>
-						<input type="text" id="title" name="title" required />
-					</div>
-
-					<div class="field-container">
-						<label for="description">Description:*</label>
-						<textarea name="description" id="description" required></textarea>
-					</div>
-
-					<div class="field-container">
-						<label for="operating-system">Operating System:</label>
-						<select name="operating system" id="operating-system">
-							<option value="Windows XP">Windows XP</option>
-							<option value="Linux">Linux</option>
-							<option value="MacOS">MacOS</option>
-						</select>
-					</div>
-
-					<div class="field-container">
-						<label for="product">Product:*</label>
-						<select name="product" id="product">
-							<option value="Formoid">Formoid</option>
-							<option value="FormoidOne">FormoidOne</option>
-							<option value="FormoidTwo">FormoidTwo</option>
-						</select>
-					</div>
-
-					<div class="field-container">
-						<label for="version">Version:*</label>
-						<input type="text" id="version" name="version" required />
-					</div>
-
-					<div class="radio-group">
-						<p class="radio-group-heading">License:*</p>
-
-						<div class="group-row">
-							<div class="field-container">
-								<label for="license-free">Free</label>
-								<input
-									type="radio"
-									name="license"
-									value="Free"
-									id="license-free"
-									required
-								/>
-							</div>
-
-							<div class="field-container">
-								<label for="license-business">Business</label>
-								<input
-									type="radio"
-									name="license"
-									value="Business"
-									id="license-Business"
-									required
-								/>
-							</div>
-						</div>
-					</div>
-
-					<div class="field-container">
-						<label for="severity">Severity:</label>
-						<select name="severity" id="severity">
-							<option value="Formoid">Critical</option>
-							<option value="FormoidOne">Medium</option>
-							<option value="FormoidTwo">Low</option>
-						</select>
-					</div>
-
-					<div class="field-container">
-						<label for="attachments">Attachments</label>
-						<input type="file" id="attachments" name="attachments" />
-					</div>
-
-					<div class="footer">
-						<input type="submit" class="submit-btn" value="Send" />
-					</div>
-				</form>
+		<header style=" margin:0 1rem 0 1rem; display: flex;">
+			<div style="flex: 3">
+				<a href="#">TO THE NEW</a>
 			</div>
-		</main>
+			<div style="flex: 1;">
+				<a href="#">Home</a>
+				<a href="#">Quick Help</a>
+			</div>
+		</header><br>
+		<div style="display: flex;">
+			<div style="flex: 1;"></div>
+				<form>
+					<header class="header"> Bug Report</header>
+					<div class="container">
+						<label>Title*</label><br>
+						<input type="text" name=""><br><br>
+		
+						<label>Description*</label><br>
+						<textarea class="desc" type="text" name=""></textarea><br><br>
+		
+						<label>Operating System*</label><br>
+						<select class="dropdown" name="Operating Systems">
+						  <option value="Windows XP">Windows XP</option>
+						  <option value="Ubuntu">Ubuntu</option>
+						  <option value="Mac OS">Mac OS</option>
+						  <option value="Windows 10">Windows 10</option>
+						</select><br><br>
+		
+						<label>Product*</label><br>
+						<select class="dropdown" name="Product">
+						  <option value="Formold">Formold</option>
+						  <option value="Formold">Formold</option>
+						  <option value="Formold">Formold</option>
+						  <option value="Formold">Formold</option>
+						</select><br><br>
+		
+						<label>Version*</label><br>
+						<input id="version" type="text" name=""><br><br>
+		
+						<label>License:</label><br>
+						<input type="radio" name="License">Free
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<input type="radio" name="License">Business<br><br>
+		
+						<label>Severity:</label><br>
+						<select class="dropdown" name="Severity">
+						  <option value="CriticalStage1">Critical</option>
+						  <option value="CriticalStage2">Medium</option>
+						  <option value="CriticalStage3">Low</option>
+						</select><br><br>
+		
+						<label>Attachments:</label><br>
+						<input type="file" name="file">
+		
+					</div>
+					<hr style="margin: 0;">
+					<footer style="display: flow-root; background-color: #d6d6d6;border-radius: 8px;">
+						<button class="btn" type="input">Send</button>
+					</footer>
+				</form>
+			<div style="flex: 1;"></div>
+		</div>
 	</body>
 </html>
