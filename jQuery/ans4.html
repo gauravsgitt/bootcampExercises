@@ -1,0 +1,40 @@
+<html>
+    <head>
+    <title>Q4</title>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+      .submiton
+       { background-color:yellow;}
+    
+     .submmmitoff
+       { background-color:orange;}
+    </style>
+    
+    </head>
+    
+    <body>
+    
+    <script type="text/javascript">
+    
+    $(document).ready(function()
+    {
+        $("button").click( function()
+        { 
+                $('input[type="submit"]').attr("disabled", "disabled").addClass("submitoff"); 
+        });
+    });
+    
+    </script>
+    
+    <center>
+        <p> The submit button will get disabled</p>
+        <input type="submit" value="submit"  name="submit" class="submiton"/>
+        </br>
+        <button>click here to disable submit button</button>
+    </center>
+    
+    <a href="index.html">index file</a>
+    
+    </body>
+    </html>
